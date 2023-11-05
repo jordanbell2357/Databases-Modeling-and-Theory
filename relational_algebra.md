@@ -162,6 +162,8 @@ sID:number, cName:string, major:string, decision:string
 σ (Student.sID = Apply.sID) ∧ (sizeHS > 400) (Student ⨯ Apply)
 ```
 
+![Alt text](result.jpg)
+
 ```csv
 "Student.sID","Student.sName","Student.GPA","Student.sizeHS","Apply.sID","Apply.cName","Apply.major","Apply.decision"
 "1002","Maria Rodriguez","3.6","600","1002","Harvard University","Economics","Waitlisted"
@@ -177,6 +179,3 @@ sID:number, cName:string, major:string, decision:string
 "1009","Michael Brown","3.6","520","1009","University of Michigan","Political Science","Rejected"
 "1009","Michael Brown","3.6","520","1009","University of California, Los Angeles","Political Science","Accepted"
 ```
-
-![Alt text](result.jpg)
-
