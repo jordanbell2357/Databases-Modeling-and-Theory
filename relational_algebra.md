@@ -179,3 +179,19 @@ sID:number, cName:string, major:string, decision:string
 "1009","Michael Brown","3.6","520","1009","University of Michigan","Political Science","Rejected"
 "1009","Michael Brown","3.6","520","1009","University of California, Los Angeles","Political Science","Accepted"
 ```
+
+![Alt text](result-1.jpg)
+
+```
+π sName,GPA (σ (Student.sID = Apply.sID) ∧ (sizeHS > 400) ∧ (decision = 'Rejected') (Student ⨯ Apply))
+```
+
+![Alt text](<result (1).jpg>)
+
+```csv
+"Student.sName","Student.GPA"
+"Liu Wei","3.9"
+"Emma Jones","3.7"
+"Isabella Garcia","3.85"
+"Michael Brown","3.6"
+```
