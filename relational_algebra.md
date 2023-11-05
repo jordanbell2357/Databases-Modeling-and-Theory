@@ -195,3 +195,11 @@ sID:number, cName:string, major:string, decision:string
 "Isabella Garcia","3.85"
 "Michael Brown","3.6"
 ```
+
+```
+σ (sizeHS > 300 and major='Computer Science' and decision='Accepted') (Student ⨝ Apply ⨝ College)
+```
+
+![Alt text](<result (2).jpg>)
+
+
