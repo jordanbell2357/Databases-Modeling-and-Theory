@@ -6,6 +6,8 @@
 
 <https://dbis-uibk.github.io/relax/calc/local/uibk/local/0>
 
+<https://jordanbell.info/relax/calc/local/uibk/local/0>
+
 ```
 group: collegeAdmissions 
 
@@ -202,4 +204,51 @@ sID:number, cName:string, major:string, decision:string
 
 ![Alt text](<result (2).jpg>)
 
+```
+((π sID (Student)) - (π sID (Apply))) ⨝ Student
+```
+
+```
+ρ name←cName (π cName ( College ) )
+```
+
+```csv
+"College.name"
+"University of California, Los Angeles"
+"University of Texas at Austin"
+"Harvard University"
+"University of Michigan"
+"New York University"
+```
+
+```
+ρ name←cName (π cName ( College ) )
+∪
+ρ name←sName (π sName ( Student ) )
+```
+
+```csv
+"College.name"
+"University of California, Los Angeles"
+"University of Texas at Austin"
+"Harvard University"
+"University of Michigan"
+"New York University"
+"Alex Johnson"
+"Maria Rodriguez"
+"Liu Wei"
+"Sophie Clark"
+"Raj Patel"
+"Emma Jones"
+"David Smith"
+"Isabella Garcia"
+"Michael Brown"
+"Sara Alizadeh"
+```
+
+```
+ρ Names (ρ name←cName (π cName ( College ) ))
+∪
+ρ Names (ρ name←sName (π sName ( Student ) ))
+```
 
